@@ -12,7 +12,7 @@
             <Select2 v-model="knihy.author_id" :options="authors.data" required />
         </div>
         <div class="form-group">
-            <label for="borrowed">Vypožičaná {{isBorrowed}}</label>
+            <label for="borrowed">Vypožičaná</label>
             <input type="checkbox" id="borrowed" v-model="checked" @click="knihy.is_borrowed ? 1: 0">
         </div>
         <button class="btn btn-primary" type="submit">Uložit</button>

@@ -1,5 +1,6 @@
 #Projekt Požičovňa knižníc
-##Install:
+##Laravel 8.6 + Inertia + Vue3
+###Install:
 `copy .env.example .env`
 
 `set mysql connection in .env`
