@@ -1,0 +1,83 @@
+<template>
+    {{ message }}
+</template>
+
+<script>
+export default {
+    name: "App",
+    data() {
+        return {
+            message: 'yep'
+        }
+    },
+}
+</script>
+
+<style lang="scss" scoped>
+body {
+    margin: 0;
+    padding: 0;
+    .left {
+        position: fixed;
+        background: #333;
+        height: 100vh;
+        color: #fff;
+        display: inline-flex;
+        flex-direction: column;
+        h1>a {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    .right {
+        background: #444;
+        height: 100%;
+        color: #fff;
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: 25%;
+        min-height: 100vh;
+    }
+    .inverse {
+        color: #fff;
+    }
+    .actions button {
+        float: left;
+        &:nth-child(1) {
+            margin-right: 5px;
+        }
+    }
+    .flash-message {
+        background: #eaeaea;
+        color: #000;
+        padding: 10px 15px;
+        width: 80%;
+        margin: 0 auto;
+        &.success {
+            border: 5px solid lightgreen;
+
+        }
+        &.error {
+            border: 5px solid red;
+
+        }
+    }
+    .create-button {
+        &>a {
+            float: right;
+            margin-right: 25px;
+        }
+        label {
+            padding: 0 15px;
+        }
+        input#filter {
+            color: #000;
+        }
+        button {
+            margin-left: 15px;
+        }
+    }
+}
+</style>
